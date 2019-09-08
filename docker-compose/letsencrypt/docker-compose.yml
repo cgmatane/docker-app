@@ -16,7 +16,7 @@ services:
       - ONLY_SUBDOMAINS=true #optional
       - STAGING=false #optional
     volumes:
-      - ../../appdata/letsencrypt/config:/config
+      - ./config:/config
     network_mode: host
     ports:
       - 443:443
