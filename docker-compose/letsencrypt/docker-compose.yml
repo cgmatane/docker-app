@@ -9,12 +9,12 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Paris
-      - URL=vpsloic.loicbertrand.net
-      - SUBDOMAINS=webmin,portainer,pgadmin,billetterie.stq.realit,
+      - URL=real-it.duckdns.org
+      - SUBDOMAINS=billetterie-frontend,pgadmin,
       - VALIDATION=http
       - DHLEVEL=2048 #optional
       - ONLY_SUBDOMAINS=true #optional
-      - STAGING=true #optional
+    #  - STAGING=true #optional
     volumes:
       - ./config:/config
     network_mode: host
