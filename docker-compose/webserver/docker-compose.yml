@@ -20,6 +20,7 @@ services:
       - ./conf/nginx/conf.d/:/etc/nginx/conf.d
     ports:
       - 8001:80
+      - 8002:81
       #- 443:443
     depends_on:
       - php-fpm
