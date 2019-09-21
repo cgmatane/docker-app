@@ -10,7 +10,7 @@ services:
       - PGID=1000
       - TZ=Europe/Paris
       - URL=real-it.duckdns.org
-      - SUBDOMAINS=billetterie-frontend,pgadmin, test-qr-response, qr-scanner,
+      - SUBDOMAINS=billetterie-frontend,pgadmin, test-qr-response, qr-scanner, billetterie,
       - VALIDATION=http
       - DHLEVEL=2048 #optional
       - ONLY_SUBDOMAINS=true #optional
