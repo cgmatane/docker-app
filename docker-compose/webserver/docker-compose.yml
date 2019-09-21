@@ -1,21 +1,12 @@
 version: '3'
 services:
-#  php-fpm:
- #   container_name: php-fm
-  #  build:
-   #   context: ./build/php-fpm
-    #  dockerfile: ./Dockerfile
-    #volumes:
-     # - ../../../webroot:/var/www/html:ro
-      #- ./webroot:/var/www/html
-
-  php-truc:
-    container_name: php-truc
-    build: .docker
-    restart: always
+  php-fpm:
+    container_name: php-fpm
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    restart: unless-stopped
     volumes:
-      - ./.docker/conf/php/php.ini:/usr/local/etc/php/conf.d/php.ini
-      - ./.docker/conf/php/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
       - ../../../webroot:/var/www/html
 
   nginx:
@@ -24,15 +15,15 @@ services:
       context: ./build/nginx
     volumes:
       - ../../../webroot:/var/www/html:ro
-      # - ./webroot:/home/lucas/index.php #
       - ./conf/nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./conf/nginx/sites/:/etc/nginx/sites-available
       - ./conf/nginx/conf.d/:/etc/nginx/conf.d
     ports:
       - 8001:80
       - 8002:81
+#      - 8003:83
       #- 443:443
     depends_on:
-      - php-truc
+      - php-fpm
     restart: always
 
