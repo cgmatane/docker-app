@@ -1,711 +1,213 @@
-2019-09-15 02:00:00,965 fail2ban.server         [369]: INFO    rollover performed on /config/log/fail2ban/fail2ban.log
-2019-09-15 17:45:24,953 fail2ban.filter         [369]: INFO    [nginx-botsearch] Found 178.62.51.29 - 2019-09-15 17:45:24
-2019-09-16 20:16:49,167 fail2ban.server         [369]: INFO    Shutdown in progress...
-2019-09-16 20:16:49,168 fail2ban.server         [369]: INFO    Stopping all jails
-2019-09-16 20:16:49,168 fail2ban.filter         [369]: INFO    Removed logfile: '/config/log/nginx/error.log'
-2019-09-16 20:16:49,193 fail2ban.filter         [369]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-16 20:16:49,193 fail2ban.filter         [369]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-16 20:16:49,282 fail2ban.actions        [369]: NOTICE  [nginx-botsearch] Flush ticket(s) with iptables-multiport
-2019-09-16 20:16:49,283 fail2ban.actions        [369]: NOTICE  [nginx-http-auth] Flush ticket(s) with iptables-multiport
-2019-09-16 20:16:49,284 fail2ban.jail           [369]: INFO    Jail 'nginx-http-auth' stopped
-2019-09-16 20:16:49,285 fail2ban.actions        [369]: NOTICE  [nginx-badbots] Flush ticket(s) with iptables-multiport
-2019-09-16 20:16:49,286 fail2ban.jail           [369]: INFO    Jail 'nginx-botsearch' stopped
-2019-09-16 20:16:49,286 fail2ban.jail           [369]: INFO    Jail 'nginx-badbots' stopped
-2019-09-16 20:16:49,287 fail2ban.database       [369]: INFO    Connection to database closed.
-2019-09-16 20:16:49,288 fail2ban.server         [369]: INFO    Exiting Fail2ban
-2019-09-16 20:17:18,430 fail2ban.server         [369]: INFO    --------------------------------------------------
-2019-09-16 20:17:18,430 fail2ban.server         [369]: INFO    Starting Fail2ban v0.10.4
-2019-09-16 20:17:18,451 fail2ban.database       [369]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
-2019-09-16 20:17:18,455 fail2ban.jail           [369]: INFO    Creating new jail 'nginx-http-auth'
-2019-09-16 20:17:18,473 fail2ban.jail           [369]: INFO    Jail 'nginx-http-auth' uses poller {}
-2019-09-16 20:17:18,473 fail2ban.jail           [369]: INFO    Initiated 'polling' backend
-2019-09-16 20:17:18,480 fail2ban.filter         [369]: INFO      maxRetry: 5
-2019-09-16 20:17:18,480 fail2ban.filter         [369]: INFO      findtime: 600
-2019-09-16 20:17:18,480 fail2ban.actions        [369]: INFO      banTime: 600
-2019-09-16 20:17:18,481 fail2ban.filter         [369]: INFO      encoding: UTF-8
-2019-09-16 20:17:18,481 fail2ban.filter         [369]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 327, hash = 6b8bf72c21c6e7aaa7db4c9d6f5d4b1e2adecf45)
-2019-09-16 20:17:18,482 fail2ban.jail           [369]: INFO    Creating new jail 'nginx-botsearch'
-2019-09-16 20:17:18,483 fail2ban.jail           [369]: INFO    Jail 'nginx-botsearch' uses poller {}
-2019-09-16 20:17:18,483 fail2ban.jail           [369]: INFO    Initiated 'polling' backend
-2019-09-16 20:17:18,488 fail2ban.datedetector   [369]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
-2019-09-16 20:17:18,490 fail2ban.filter         [369]: INFO      maxRetry: 2
-2019-09-16 20:17:18,490 fail2ban.filter         [369]: INFO      findtime: 600
-2019-09-16 20:17:18,490 fail2ban.actions        [369]: INFO      banTime: 600
-2019-09-16 20:17:18,490 fail2ban.filter         [369]: INFO      encoding: UTF-8
-2019-09-16 20:17:18,491 fail2ban.filter         [369]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 27781, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-16 20:17:18,492 fail2ban.jail           [369]: INFO    Creating new jail 'nginx-badbots'
-2019-09-16 20:17:18,493 fail2ban.jail           [369]: INFO    Jail 'nginx-badbots' uses poller {}
-2019-09-16 20:17:18,493 fail2ban.jail           [369]: INFO    Initiated 'polling' backend
-2019-09-16 20:17:18,504 fail2ban.filter         [369]: INFO      maxRetry: 2
-2019-09-16 20:17:18,504 fail2ban.filter         [369]: INFO      findtime: 600
-2019-09-16 20:17:18,504 fail2ban.actions        [369]: INFO      banTime: 600
-2019-09-16 20:17:18,505 fail2ban.filter         [369]: INFO      encoding: UTF-8
-2019-09-16 20:17:18,505 fail2ban.filter         [369]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 27781, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-16 20:17:18,507 fail2ban.jail           [369]: INFO    Jail 'nginx-http-auth' started
-2019-09-16 20:17:18,508 fail2ban.jail           [369]: INFO    Jail 'nginx-botsearch' started
-2019-09-16 20:17:18,508 fail2ban.jail           [369]: INFO    Jail 'nginx-badbots' started
-2019-09-16 20:34:11,298 fail2ban.server         [369]: INFO    Shutdown in progress...
-2019-09-16 20:34:11,299 fail2ban.server         [369]: INFO    Stopping all jails
-2019-09-16 20:34:11,299 fail2ban.filter         [369]: INFO    Removed logfile: '/config/log/nginx/error.log'
-2019-09-16 20:34:11,299 fail2ban.filter         [369]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-16 20:34:11,300 fail2ban.filter         [369]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-16 20:34:11,352 fail2ban.actions        [369]: NOTICE  [nginx-botsearch] Flush ticket(s) with iptables-multiport
-2019-09-16 20:34:11,353 fail2ban.actions        [369]: NOTICE  [nginx-http-auth] Flush ticket(s) with iptables-multiport
-2019-09-16 20:34:11,357 fail2ban.actions        [369]: NOTICE  [nginx-badbots] Flush ticket(s) with iptables-multiport
-2019-09-16 20:34:18,574 fail2ban.server         [349]: INFO    --------------------------------------------------
-2019-09-16 20:34:18,574 fail2ban.server         [349]: INFO    Starting Fail2ban v0.10.4
-2019-09-16 20:34:18,575 fail2ban.asyncserver    [349]: ERROR   Fail2ban seems to be already running
-2019-09-16 20:34:18,575 fail2ban.asyncserver    [349]: WARNING Forcing execution of the server
-2019-09-16 20:34:18,584 fail2ban.database       [349]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
-2019-09-16 20:34:18,585 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-http-auth'
-2019-09-16 20:34:18,589 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' uses poller {}
-2019-09-16 20:34:18,590 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-16 20:34:18,596 fail2ban.filter         [349]: INFO      maxRetry: 5
-2019-09-16 20:34:18,597 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-16 20:34:18,597 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-16 20:34:18,597 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-16 20:34:18,598 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 3896, hash = 6b8bf72c21c6e7aaa7db4c9d6f5d4b1e2adecf45)
-2019-09-16 20:34:18,599 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-botsearch'
-2019-09-16 20:34:18,600 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' uses poller {}
-2019-09-16 20:34:18,600 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-16 20:34:18,605 fail2ban.datedetector   [349]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
-2019-09-16 20:34:18,607 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-16 20:34:18,608 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-16 20:34:18,608 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-16 20:34:18,608 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-16 20:34:18,609 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 45190, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-16 20:34:18,609 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-badbots'
-2019-09-16 20:34:18,610 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' uses poller {}
-2019-09-16 20:34:18,611 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-16 20:34:18,622 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-16 20:34:18,623 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-16 20:34:18,623 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-16 20:34:18,623 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-16 20:34:18,624 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 45190, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-16 20:34:18,625 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' started
-2019-09-16 20:34:18,626 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' started
-2019-09-16 20:34:18,627 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' started
-2019-09-16 23:13:02,188 fail2ban.server         [349]: INFO    Shutdown in progress...
-2019-09-16 23:13:02,189 fail2ban.server         [349]: INFO    Stopping all jails
-2019-09-16 23:13:02,189 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/error.log'
-2019-09-16 23:13:02,189 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-16 23:13:02,189 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-16 23:13:02,204 fail2ban.actions        [349]: NOTICE  [nginx-http-auth] Flush ticket(s) with iptables-multiport
-2019-09-16 23:13:02,205 fail2ban.actions        [349]: NOTICE  [nginx-botsearch] Flush ticket(s) with iptables-multiport
-2019-09-16 23:13:02,206 fail2ban.actions        [349]: NOTICE  [nginx-badbots] Flush ticket(s) with iptables-multiport
-2019-09-16 23:13:02,550 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' stopped
-2019-09-16 23:13:02,551 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' stopped
-2019-09-16 23:13:02,551 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' stopped
-2019-09-16 23:13:02,551 fail2ban.database       [349]: INFO    Connection to database closed.
-2019-09-16 23:13:02,552 fail2ban.server         [349]: INFO    Exiting Fail2ban
-2019-09-16 23:13:54,558 fail2ban.server         [349]: INFO    --------------------------------------------------
-2019-09-16 23:13:54,558 fail2ban.server         [349]: INFO    Starting Fail2ban v0.10.4
-2019-09-16 23:13:54,578 fail2ban.database       [349]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
-2019-09-16 23:13:54,580 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-http-auth'
-2019-09-16 23:13:54,587 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' uses poller {}
-2019-09-16 23:13:54,587 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-16 23:13:54,596 fail2ban.filter         [349]: INFO      maxRetry: 5
-2019-09-16 23:13:54,596 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-16 23:13:54,597 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-16 23:13:54,597 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-16 23:13:54,598 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 10683, hash = 6b8bf72c21c6e7aaa7db4c9d6f5d4b1e2adecf45)
-2019-09-16 23:13:54,599 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-botsearch'
-2019-09-16 23:13:54,600 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' uses poller {}
-2019-09-16 23:13:54,600 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-16 23:13:54,606 fail2ban.datedetector   [349]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
-2019-09-16 23:13:54,607 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-16 23:13:54,608 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-16 23:13:54,608 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-16 23:13:54,608 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-16 23:13:54,609 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 86625, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-16 23:13:54,610 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-badbots'
-2019-09-16 23:13:54,611 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' uses poller {}
-2019-09-16 23:13:54,611 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-16 23:13:54,623 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-16 23:13:54,623 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-16 23:13:54,624 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-16 23:13:54,624 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-16 23:13:54,625 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 86625, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-16 23:13:54,627 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' started
-2019-09-16 23:13:54,628 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' started
-2019-09-16 23:13:54,629 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' started
-2019-09-16 23:38:39,065 fail2ban.server         [349]: INFO    Shutdown in progress...
-2019-09-16 23:38:39,065 fail2ban.server         [349]: INFO    Stopping all jails
-2019-09-16 23:38:39,066 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/error.log'
-2019-09-16 23:38:39,066 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-16 23:38:39,066 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-16 23:38:39,227 fail2ban.actions        [349]: NOTICE  [nginx-http-auth] Flush ticket(s) with iptables-multiport
-2019-09-16 23:38:39,228 fail2ban.actions        [349]: NOTICE  [nginx-botsearch] Flush ticket(s) with iptables-multiport
-2019-09-16 23:38:39,229 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' stopped
-2019-09-16 23:38:39,230 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' stopped
-2019-09-16 23:38:39,231 fail2ban.actions        [349]: NOTICE  [nginx-badbots] Flush ticket(s) with iptables-multiport
-2019-09-16 23:38:39,231 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' stopped
-2019-09-16 23:38:39,232 fail2ban.database       [349]: INFO    Connection to database closed.
-2019-09-16 23:38:39,232 fail2ban.server         [349]: INFO    Exiting Fail2ban
-2019-09-16 23:39:08,350 fail2ban.server         [369]: INFO    --------------------------------------------------
-2019-09-16 23:39:08,350 fail2ban.server         [369]: INFO    Starting Fail2ban v0.10.4
-2019-09-16 23:39:08,445 fail2ban.database       [369]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
-2019-09-16 23:39:08,447 fail2ban.jail           [369]: INFO    Creating new jail 'nginx-http-auth'
-2019-09-16 23:39:08,464 fail2ban.jail           [369]: INFO    Jail 'nginx-http-auth' uses poller {}
-2019-09-16 23:39:08,465 fail2ban.jail           [369]: INFO    Initiated 'polling' backend
-2019-09-16 23:39:08,472 fail2ban.filter         [369]: INFO      maxRetry: 5
-2019-09-16 23:39:08,472 fail2ban.filter         [369]: INFO      findtime: 600
-2019-09-16 23:39:08,472 fail2ban.actions        [369]: INFO      banTime: 600
-2019-09-16 23:39:08,473 fail2ban.filter         [369]: INFO      encoding: UTF-8
-2019-09-16 23:39:08,474 fail2ban.filter         [369]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 10683, hash = 6b8bf72c21c6e7aaa7db4c9d6f5d4b1e2adecf45)
-2019-09-16 23:39:08,475 fail2ban.jail           [369]: INFO    Creating new jail 'nginx-botsearch'
-2019-09-16 23:39:08,476 fail2ban.jail           [369]: INFO    Jail 'nginx-botsearch' uses poller {}
-2019-09-16 23:39:08,476 fail2ban.jail           [369]: INFO    Initiated 'polling' backend
-2019-09-16 23:39:08,480 fail2ban.datedetector   [369]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
-2019-09-16 23:39:08,482 fail2ban.filter         [369]: INFO      maxRetry: 2
-2019-09-16 23:39:08,482 fail2ban.filter         [369]: INFO      findtime: 600
-2019-09-16 23:39:08,483 fail2ban.actions        [369]: INFO      banTime: 600
-2019-09-16 23:39:08,483 fail2ban.filter         [369]: INFO      encoding: UTF-8
-2019-09-16 23:39:08,484 fail2ban.filter         [369]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 86625, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-16 23:39:08,485 fail2ban.jail           [369]: INFO    Creating new jail 'nginx-badbots'
-2019-09-16 23:39:08,486 fail2ban.jail           [369]: INFO    Jail 'nginx-badbots' uses poller {}
-2019-09-16 23:39:08,486 fail2ban.jail           [369]: INFO    Initiated 'polling' backend
-2019-09-16 23:39:08,497 fail2ban.filter         [369]: INFO      maxRetry: 2
-2019-09-16 23:39:08,497 fail2ban.filter         [369]: INFO      findtime: 600
-2019-09-16 23:39:08,497 fail2ban.actions        [369]: INFO      banTime: 600
-2019-09-16 23:39:08,498 fail2ban.filter         [369]: INFO      encoding: UTF-8
-2019-09-16 23:39:08,498 fail2ban.filter         [369]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 86625, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-16 23:39:08,500 fail2ban.jail           [369]: INFO    Jail 'nginx-http-auth' started
-2019-09-16 23:39:08,500 fail2ban.jail           [369]: INFO    Jail 'nginx-botsearch' started
-2019-09-16 23:39:08,501 fail2ban.jail           [369]: INFO    Jail 'nginx-badbots' started
-2019-09-16 23:42:13,509 fail2ban.server         [369]: INFO    Shutdown in progress...
-2019-09-16 23:42:13,509 fail2ban.server         [369]: INFO    Stopping all jails
-2019-09-16 23:42:13,510 fail2ban.filter         [369]: INFO    Removed logfile: '/config/log/nginx/error.log'
-2019-09-16 23:42:13,510 fail2ban.filter         [369]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-16 23:42:13,510 fail2ban.filter         [369]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-16 23:42:14,010 fail2ban.actions        [369]: NOTICE  [nginx-botsearch] Flush ticket(s) with iptables-multiport
-2019-09-16 23:42:14,011 fail2ban.actions        [369]: NOTICE  [nginx-badbots] Flush ticket(s) with iptables-multiport
-2019-09-16 23:42:14,012 fail2ban.actions        [369]: NOTICE  [nginx-http-auth] Flush ticket(s) with iptables-multiport
-2019-09-16 23:42:14,013 fail2ban.jail           [369]: INFO    Jail 'nginx-http-auth' stopped
-2019-09-16 23:42:14,013 fail2ban.jail           [369]: INFO    Jail 'nginx-botsearch' stopped
-2019-09-16 23:42:14,014 fail2ban.jail           [369]: INFO    Jail 'nginx-badbots' stopped
-2019-09-16 23:42:14,015 fail2ban.database       [369]: INFO    Connection to database closed.
-2019-09-16 23:42:14,015 fail2ban.server         [369]: INFO    Exiting Fail2ban
-2019-09-16 23:42:40,356 fail2ban.server         [369]: INFO    --------------------------------------------------
-2019-09-16 23:42:40,356 fail2ban.server         [369]: INFO    Starting Fail2ban v0.10.4
-2019-09-16 23:42:40,386 fail2ban.database       [369]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
-2019-09-16 23:42:40,388 fail2ban.jail           [369]: INFO    Creating new jail 'nginx-http-auth'
-2019-09-16 23:42:40,403 fail2ban.jail           [369]: INFO    Jail 'nginx-http-auth' uses poller {}
-2019-09-16 23:42:40,403 fail2ban.jail           [369]: INFO    Initiated 'polling' backend
-2019-09-16 23:42:40,410 fail2ban.filter         [369]: INFO      maxRetry: 5
-2019-09-16 23:42:40,410 fail2ban.filter         [369]: INFO      findtime: 600
-2019-09-16 23:42:40,410 fail2ban.actions        [369]: INFO      banTime: 600
-2019-09-16 23:42:40,411 fail2ban.filter         [369]: INFO      encoding: UTF-8
-2019-09-16 23:42:40,411 fail2ban.filter         [369]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 10683, hash = 6b8bf72c21c6e7aaa7db4c9d6f5d4b1e2adecf45)
-2019-09-16 23:42:40,412 fail2ban.jail           [369]: INFO    Creating new jail 'nginx-botsearch'
-2019-09-16 23:42:40,413 fail2ban.jail           [369]: INFO    Jail 'nginx-botsearch' uses poller {}
-2019-09-16 23:42:40,413 fail2ban.jail           [369]: INFO    Initiated 'polling' backend
-2019-09-16 23:42:40,418 fail2ban.datedetector   [369]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
-2019-09-16 23:42:40,420 fail2ban.filter         [369]: INFO      maxRetry: 2
-2019-09-16 23:42:40,420 fail2ban.filter         [369]: INFO      findtime: 600
-2019-09-16 23:42:40,420 fail2ban.actions        [369]: INFO      banTime: 600
-2019-09-16 23:42:40,421 fail2ban.filter         [369]: INFO      encoding: UTF-8
-2019-09-16 23:42:40,421 fail2ban.filter         [369]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 86625, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-16 23:42:40,422 fail2ban.jail           [369]: INFO    Creating new jail 'nginx-badbots'
-2019-09-16 23:42:40,423 fail2ban.jail           [369]: INFO    Jail 'nginx-badbots' uses poller {}
-2019-09-16 23:42:40,423 fail2ban.jail           [369]: INFO    Initiated 'polling' backend
-2019-09-16 23:42:40,434 fail2ban.filter         [369]: INFO      maxRetry: 2
-2019-09-16 23:42:40,434 fail2ban.filter         [369]: INFO      findtime: 600
-2019-09-16 23:42:40,435 fail2ban.actions        [369]: INFO      banTime: 600
-2019-09-16 23:42:40,435 fail2ban.filter         [369]: INFO      encoding: UTF-8
-2019-09-16 23:42:40,435 fail2ban.filter         [369]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 86625, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-16 23:42:40,437 fail2ban.jail           [369]: INFO    Jail 'nginx-http-auth' started
-2019-09-16 23:42:40,438 fail2ban.jail           [369]: INFO    Jail 'nginx-botsearch' started
-2019-09-16 23:42:40,439 fail2ban.jail           [369]: INFO    Jail 'nginx-badbots' started
-2019-09-16 23:45:16,744 fail2ban.server         [369]: INFO    Shutdown in progress...
-2019-09-16 23:45:16,745 fail2ban.server         [369]: INFO    Stopping all jails
-2019-09-16 23:45:16,745 fail2ban.filter         [369]: INFO    Removed logfile: '/config/log/nginx/error.log'
-2019-09-16 23:45:16,745 fail2ban.filter         [369]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-16 23:45:16,745 fail2ban.filter         [369]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-16 23:45:16,901 fail2ban.actions        [369]: NOTICE  [nginx-badbots] Flush ticket(s) with iptables-multiport
-2019-09-16 23:45:16,901 fail2ban.actions        [369]: NOTICE  [nginx-botsearch] Flush ticket(s) with iptables-multiport
-2019-09-16 23:45:16,902 fail2ban.actions        [369]: NOTICE  [nginx-http-auth] Flush ticket(s) with iptables-multiport
-2019-09-16 23:45:16,902 fail2ban.jail           [369]: INFO    Jail 'nginx-http-auth' stopped
-2019-09-16 23:45:16,902 fail2ban.jail           [369]: INFO    Jail 'nginx-botsearch' stopped
-2019-09-16 23:45:16,903 fail2ban.jail           [369]: INFO    Jail 'nginx-badbots' stopped
-2019-09-16 23:45:16,903 fail2ban.database       [369]: INFO    Connection to database closed.
-2019-09-16 23:45:16,903 fail2ban.server         [369]: INFO    Exiting Fail2ban
-2019-09-16 23:45:26,642 fail2ban.server         [349]: INFO    --------------------------------------------------
-2019-09-16 23:45:26,642 fail2ban.server         [349]: INFO    Starting Fail2ban v0.10.4
-2019-09-16 23:45:26,651 fail2ban.database       [349]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
-2019-09-16 23:45:26,652 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-http-auth'
-2019-09-16 23:45:26,655 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' uses poller {}
-2019-09-16 23:45:26,655 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-16 23:45:26,662 fail2ban.filter         [349]: INFO      maxRetry: 5
-2019-09-16 23:45:26,662 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-16 23:45:26,662 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-16 23:45:26,663 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-16 23:45:26,663 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 10683, hash = 6b8bf72c21c6e7aaa7db4c9d6f5d4b1e2adecf45)
-2019-09-16 23:45:26,664 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-botsearch'
-2019-09-16 23:45:26,665 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' uses poller {}
-2019-09-16 23:45:26,665 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-16 23:45:26,670 fail2ban.datedetector   [349]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
-2019-09-16 23:45:26,672 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-16 23:45:26,672 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-16 23:45:26,673 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-16 23:45:26,673 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-16 23:45:26,673 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 86625, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-16 23:45:26,674 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-badbots'
-2019-09-16 23:45:26,675 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' uses poller {}
-2019-09-16 23:45:26,675 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-16 23:45:26,687 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-16 23:45:26,687 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-16 23:45:26,687 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-16 23:45:26,688 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-16 23:45:26,688 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 86625, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-16 23:45:26,690 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' started
-2019-09-16 23:45:26,691 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' started
-2019-09-16 23:45:26,692 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' started
-2019-09-16 23:45:35,448 fail2ban.server         [349]: INFO    Shutdown in progress...
-2019-09-16 23:45:35,448 fail2ban.server         [349]: INFO    Stopping all jails
-2019-09-16 23:45:35,453 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/error.log'
-2019-09-16 23:45:35,453 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-16 23:45:35,453 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-16 23:45:42,753 fail2ban.server         [349]: INFO    --------------------------------------------------
-2019-09-16 23:45:42,753 fail2ban.server         [349]: INFO    Starting Fail2ban v0.10.4
-2019-09-16 23:45:42,754 fail2ban.asyncserver    [349]: ERROR   Fail2ban seems to be already running
-2019-09-16 23:45:42,754 fail2ban.asyncserver    [349]: WARNING Forcing execution of the server
-2019-09-16 23:45:42,781 fail2ban.database       [349]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
-2019-09-16 23:45:42,784 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-http-auth'
-2019-09-16 23:45:42,789 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' uses poller {}
-2019-09-16 23:45:42,789 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-16 23:45:42,798 fail2ban.filter         [349]: INFO      maxRetry: 5
-2019-09-16 23:45:42,799 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-16 23:45:42,799 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-16 23:45:42,799 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-16 23:45:42,800 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 10683, hash = 6b8bf72c21c6e7aaa7db4c9d6f5d4b1e2adecf45)
-2019-09-16 23:45:42,801 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-botsearch'
-2019-09-16 23:45:42,802 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' uses poller {}
-2019-09-16 23:45:42,803 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-16 23:45:42,808 fail2ban.datedetector   [349]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
-2019-09-16 23:45:42,809 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-16 23:45:42,810 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-16 23:45:42,810 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-16 23:45:42,810 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-16 23:45:42,811 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 86625, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-16 23:45:42,812 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-badbots'
-2019-09-16 23:45:42,813 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' uses poller {}
-2019-09-16 23:45:42,813 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-16 23:45:42,825 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-16 23:45:42,825 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-16 23:45:42,826 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-16 23:45:42,826 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-16 23:45:42,826 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 86625, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-16 23:45:42,828 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' started
-2019-09-16 23:45:42,829 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' started
-2019-09-16 23:45:42,830 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' started
-2019-09-16 23:51:05,754 fail2ban.server         [349]: INFO    Shutdown in progress...
-2019-09-16 23:51:05,755 fail2ban.server         [349]: INFO    Stopping all jails
-2019-09-16 23:51:05,755 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/error.log'
-2019-09-16 23:51:05,756 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-16 23:51:05,756 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-16 23:51:05,958 fail2ban.actions        [349]: NOTICE  [nginx-botsearch] Flush ticket(s) with iptables-multiport
-2019-09-16 23:51:05,959 fail2ban.actions        [349]: NOTICE  [nginx-badbots] Flush ticket(s) with iptables-multiport
-2019-09-16 23:51:05,960 fail2ban.actions        [349]: NOTICE  [nginx-http-auth] Flush ticket(s) with iptables-multiport
-2019-09-16 23:51:05,960 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' stopped
-2019-09-16 23:52:00,019 fail2ban.server         [349]: INFO    --------------------------------------------------
-2019-09-16 23:52:00,020 fail2ban.server         [349]: INFO    Starting Fail2ban v0.10.4
-2019-09-16 23:52:00,020 fail2ban.asyncserver    [349]: ERROR   Fail2ban seems to be already running
-2019-09-16 23:52:00,020 fail2ban.asyncserver    [349]: WARNING Forcing execution of the server
-2019-09-16 23:52:00,028 fail2ban.database       [349]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
-2019-09-16 23:52:00,029 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-http-auth'
-2019-09-16 23:52:00,033 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' uses poller {}
-2019-09-16 23:52:00,033 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-16 23:52:00,039 fail2ban.filter         [349]: INFO      maxRetry: 5
-2019-09-16 23:52:00,040 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-16 23:52:00,040 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-16 23:52:00,041 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-16 23:52:00,041 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 10683, hash = 6b8bf72c21c6e7aaa7db4c9d6f5d4b1e2adecf45)
-2019-09-16 23:52:00,042 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-botsearch'
-2019-09-16 23:52:00,043 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' uses poller {}
-2019-09-16 23:52:00,043 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-16 23:52:00,049 fail2ban.datedetector   [349]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
-2019-09-16 23:52:00,051 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-16 23:52:00,051 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-16 23:52:00,052 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-16 23:52:00,052 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-16 23:52:00,052 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 89906, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-16 23:52:00,053 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-badbots'
-2019-09-16 23:52:00,054 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' uses poller {}
-2019-09-16 23:52:00,055 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-16 23:52:00,067 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-16 23:52:00,068 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-16 23:52:00,068 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-16 23:52:00,068 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-16 23:52:00,069 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 89906, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-16 23:52:00,071 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' started
-2019-09-16 23:52:00,072 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' started
-2019-09-16 23:52:00,073 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' started
-2019-09-16 23:57:22,580 fail2ban.server         [349]: INFO    Shutdown in progress...
-2019-09-16 23:57:22,601 fail2ban.server         [349]: INFO    Stopping all jails
-2019-09-16 23:57:22,601 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/error.log'
-2019-09-16 23:57:22,602 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-16 23:57:22,602 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-16 23:57:22,605 fail2ban.actions        [349]: NOTICE  [nginx-badbots] Flush ticket(s) with iptables-multiport
-2019-09-16 23:57:22,606 fail2ban.actions        [349]: NOTICE  [nginx-botsearch] Flush ticket(s) with iptables-multiport
-2019-09-16 23:57:22,606 fail2ban.actions        [349]: NOTICE  [nginx-http-auth] Flush ticket(s) with iptables-multiport
-2019-09-16 23:57:22,606 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' stopped
-2019-09-16 23:57:22,681 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' stopped
-2019-09-16 23:57:22,713 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' stopped
-2019-09-16 23:57:22,714 fail2ban.database       [349]: INFO    Connection to database closed.
-2019-09-16 23:57:22,714 fail2ban.server         [349]: INFO    Exiting Fail2ban
-2019-09-16 23:57:59,069 fail2ban.server         [349]: INFO    --------------------------------------------------
-2019-09-16 23:57:59,069 fail2ban.server         [349]: INFO    Starting Fail2ban v0.10.4
-2019-09-16 23:57:59,079 fail2ban.database       [349]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
-2019-09-16 23:57:59,080 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-http-auth'
-2019-09-16 23:57:59,084 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' uses poller {}
-2019-09-16 23:57:59,084 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-16 23:57:59,090 fail2ban.filter         [349]: INFO      maxRetry: 5
-2019-09-16 23:57:59,091 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-16 23:57:59,091 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-16 23:57:59,091 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-16 23:57:59,092 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 10683, hash = 6b8bf72c21c6e7aaa7db4c9d6f5d4b1e2adecf45)
-2019-09-16 23:57:59,093 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-botsearch'
-2019-09-16 23:57:59,094 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' uses poller {}
-2019-09-16 23:57:59,094 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-16 23:57:59,098 fail2ban.datedetector   [349]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
-2019-09-16 23:57:59,100 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-16 23:57:59,101 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-16 23:57:59,101 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-16 23:57:59,101 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-16 23:57:59,102 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 95372, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-16 23:57:59,102 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-badbots'
-2019-09-16 23:57:59,103 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' uses poller {}
-2019-09-16 23:57:59,103 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-16 23:57:59,115 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-16 23:57:59,115 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-16 23:57:59,116 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-16 23:57:59,116 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-16 23:57:59,116 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 95372, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-16 23:57:59,118 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' started
-2019-09-16 23:57:59,119 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' started
-2019-09-16 23:57:59,120 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' started
-2019-09-17 00:01:04,168 fail2ban.server         [349]: INFO    Shutdown in progress...
-2019-09-17 00:01:04,188 fail2ban.server         [349]: INFO    Stopping all jails
-2019-09-17 00:01:04,189 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/error.log'
-2019-09-17 00:01:04,189 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-17 00:01:04,189 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-17 00:01:15,240 fail2ban.server         [349]: INFO    --------------------------------------------------
-2019-09-17 00:01:15,240 fail2ban.server         [349]: INFO    Starting Fail2ban v0.10.4
-2019-09-17 00:01:15,241 fail2ban.asyncserver    [349]: ERROR   Fail2ban seems to be already running
-2019-09-17 00:01:15,241 fail2ban.asyncserver    [349]: WARNING Forcing execution of the server
-2019-09-17 00:01:15,249 fail2ban.database       [349]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
-2019-09-17 00:01:15,251 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-http-auth'
-2019-09-17 00:01:15,254 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' uses poller {}
-2019-09-17 00:01:15,254 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-17 00:01:15,261 fail2ban.filter         [349]: INFO      maxRetry: 5
-2019-09-17 00:01:15,261 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-17 00:01:15,261 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-17 00:01:15,262 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-17 00:01:15,262 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 10683, hash = 6b8bf72c21c6e7aaa7db4c9d6f5d4b1e2adecf45)
-2019-09-17 00:01:15,263 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-botsearch'
-2019-09-17 00:01:15,264 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' uses poller {}
-2019-09-17 00:01:15,265 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-17 00:01:15,269 fail2ban.datedetector   [349]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
-2019-09-17 00:01:15,271 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-17 00:01:15,271 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-17 00:01:15,272 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-17 00:01:15,272 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-17 00:01:15,272 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 101671, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-17 00:01:15,273 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-badbots'
-2019-09-17 00:01:15,274 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' uses poller {}
-2019-09-17 00:01:15,274 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-17 00:01:15,286 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-17 00:01:15,286 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-17 00:01:15,287 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-17 00:01:15,287 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-17 00:01:15,287 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 101671, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-17 00:01:15,289 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' started
-2019-09-17 00:01:15,290 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' started
-2019-09-17 00:01:15,291 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' started
-2019-09-17 00:03:20,447 fail2ban.server         [349]: INFO    Shutdown in progress...
-2019-09-17 00:03:20,448 fail2ban.server         [349]: INFO    Stopping all jails
-2019-09-17 00:03:20,468 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/error.log'
-2019-09-17 00:03:20,469 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-17 00:03:20,469 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-17 00:03:20,690 fail2ban.actions        [349]: NOTICE  [nginx-http-auth] Flush ticket(s) with iptables-multiport
-2019-09-17 00:03:28,804 fail2ban.server         [349]: INFO    --------------------------------------------------
-2019-09-17 00:03:28,805 fail2ban.server         [349]: INFO    Starting Fail2ban v0.10.4
-2019-09-17 00:03:28,806 fail2ban.asyncserver    [349]: ERROR   Fail2ban seems to be already running
-2019-09-17 00:03:28,806 fail2ban.asyncserver    [349]: WARNING Forcing execution of the server
-2019-09-17 00:03:28,834 fail2ban.database       [349]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
-2019-09-17 00:03:28,838 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-http-auth'
-2019-09-17 00:03:28,845 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' uses poller {}
-2019-09-17 00:03:28,845 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-17 00:03:28,854 fail2ban.filter         [349]: INFO      maxRetry: 5
-2019-09-17 00:03:28,855 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-17 00:03:28,855 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-17 00:03:28,855 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-17 00:03:28,856 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 10683, hash = 6b8bf72c21c6e7aaa7db4c9d6f5d4b1e2adecf45)
-2019-09-17 00:03:28,857 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-botsearch'
-2019-09-17 00:03:28,858 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' uses poller {}
-2019-09-17 00:03:28,858 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-17 00:03:28,863 fail2ban.datedetector   [349]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
-2019-09-17 00:03:28,865 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-17 00:03:28,865 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-17 00:03:28,866 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-17 00:03:28,866 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-17 00:03:28,866 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 104512, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-17 00:03:28,867 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-badbots'
-2019-09-17 00:03:28,868 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' uses poller {}
-2019-09-17 00:03:28,868 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-17 00:03:28,879 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-17 00:03:28,880 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-17 00:03:28,880 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-17 00:03:28,880 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-17 00:03:28,881 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 104512, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-17 00:03:28,882 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' started
-2019-09-17 00:03:28,883 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' started
-2019-09-17 00:03:28,884 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' started
-2019-09-17 00:06:34,369 fail2ban.server         [349]: INFO    Shutdown in progress...
-2019-09-17 00:06:34,369 fail2ban.server         [349]: INFO    Stopping all jails
-2019-09-17 00:06:34,370 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/error.log'
-2019-09-17 00:06:34,370 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-17 00:06:34,370 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-17 00:06:34,388 fail2ban.actions        [349]: NOTICE  [nginx-badbots] Flush ticket(s) with iptables-multiport
-2019-09-17 00:06:34,389 fail2ban.actions        [349]: NOTICE  [nginx-http-auth] Flush ticket(s) with iptables-multiport
-2019-09-17 00:06:34,392 fail2ban.actions        [349]: NOTICE  [nginx-botsearch] Flush ticket(s) with iptables-multiport
-2019-09-17 00:06:34,419 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' stopped
-2019-09-17 00:06:34,433 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' stopped
-2019-09-17 00:06:34,476 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' stopped
-2019-09-17 00:06:34,477 fail2ban.database       [349]: INFO    Connection to database closed.
-2019-09-17 00:06:34,477 fail2ban.server         [349]: INFO    Exiting Fail2ban
-2019-09-17 00:06:43,206 fail2ban.server         [349]: INFO    --------------------------------------------------
-2019-09-17 00:06:43,206 fail2ban.server         [349]: INFO    Starting Fail2ban v0.10.4
-2019-09-17 00:06:43,215 fail2ban.database       [349]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
-2019-09-17 00:06:43,216 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-http-auth'
-2019-09-17 00:06:43,219 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' uses poller {}
-2019-09-17 00:06:43,219 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-17 00:06:43,226 fail2ban.filter         [349]: INFO      maxRetry: 5
-2019-09-17 00:06:43,226 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-17 00:06:43,227 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-17 00:06:43,227 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-17 00:06:43,227 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 10683, hash = 6b8bf72c21c6e7aaa7db4c9d6f5d4b1e2adecf45)
-2019-09-17 00:06:43,228 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-botsearch'
-2019-09-17 00:06:43,229 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' uses poller {}
-2019-09-17 00:06:43,230 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-17 00:06:43,234 fail2ban.datedetector   [349]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
-2019-09-17 00:06:43,236 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-17 00:06:43,237 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-17 00:06:43,237 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-17 00:06:43,237 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-17 00:06:43,238 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 105640, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-17 00:06:43,238 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-badbots'
-2019-09-17 00:06:43,239 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' uses poller {}
-2019-09-17 00:06:43,239 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-17 00:06:43,251 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-17 00:06:43,251 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-17 00:06:43,251 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-17 00:06:43,252 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-17 00:06:43,252 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 105640, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-17 00:06:43,254 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' started
-2019-09-17 00:06:43,255 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' started
-2019-09-17 00:06:43,256 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' started
-2019-09-18 16:41:43,205 fail2ban.server         [349]: INFO    Shutdown in progress...
-2019-09-18 16:41:43,219 fail2ban.server         [349]: INFO    Stopping all jails
-2019-09-18 16:41:43,219 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/error.log'
-2019-09-18 16:41:43,220 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-18 16:41:43,220 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-18 16:42:21,802 fail2ban.server         [369]: INFO    --------------------------------------------------
-2019-09-18 16:42:21,802 fail2ban.server         [369]: INFO    Starting Fail2ban v0.10.4
-2019-09-18 16:42:21,890 fail2ban.database       [369]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
-2019-09-18 16:42:21,892 fail2ban.jail           [369]: INFO    Creating new jail 'nginx-http-auth'
-2019-09-18 16:42:21,912 fail2ban.jail           [369]: INFO    Jail 'nginx-http-auth' uses poller {}
-2019-09-18 16:42:21,912 fail2ban.jail           [369]: INFO    Initiated 'polling' backend
-2019-09-18 16:42:21,919 fail2ban.filter         [369]: INFO      maxRetry: 5
-2019-09-18 16:42:21,919 fail2ban.filter         [369]: INFO      findtime: 600
-2019-09-18 16:42:21,920 fail2ban.actions        [369]: INFO      banTime: 600
-2019-09-18 16:42:21,920 fail2ban.filter         [369]: INFO      encoding: UTF-8
-2019-09-18 16:42:21,922 fail2ban.filter         [369]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 24456, hash = 6b8bf72c21c6e7aaa7db4c9d6f5d4b1e2adecf45)
-2019-09-18 16:42:21,925 fail2ban.jail           [369]: INFO    Creating new jail 'nginx-botsearch'
-2019-09-18 16:42:21,929 fail2ban.jail           [369]: INFO    Jail 'nginx-botsearch' uses poller {}
-2019-09-18 16:42:21,930 fail2ban.jail           [369]: INFO    Initiated 'polling' backend
-2019-09-18 16:42:21,939 fail2ban.datedetector   [369]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
-2019-09-18 16:42:21,942 fail2ban.filter         [369]: INFO      maxRetry: 2
-2019-09-18 16:42:21,942 fail2ban.filter         [369]: INFO      findtime: 600
-2019-09-18 16:42:21,943 fail2ban.actions        [369]: INFO      banTime: 600
-2019-09-18 16:42:21,943 fail2ban.filter         [369]: INFO      encoding: UTF-8
-2019-09-18 16:42:21,943 fail2ban.filter         [369]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 726559, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-18 16:42:21,944 fail2ban.jail           [369]: INFO    Creating new jail 'nginx-badbots'
-2019-09-18 16:42:21,945 fail2ban.jail           [369]: INFO    Jail 'nginx-badbots' uses poller {}
-2019-09-18 16:42:21,946 fail2ban.jail           [369]: INFO    Initiated 'polling' backend
-2019-09-18 16:42:21,958 fail2ban.filter         [369]: INFO      maxRetry: 2
-2019-09-18 16:42:21,959 fail2ban.filter         [369]: INFO      findtime: 600
-2019-09-18 16:42:21,959 fail2ban.actions        [369]: INFO      banTime: 600
-2019-09-18 16:42:21,960 fail2ban.filter         [369]: INFO      encoding: UTF-8
-2019-09-18 16:42:21,960 fail2ban.filter         [369]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 726559, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-18 16:42:21,962 fail2ban.jail           [369]: INFO    Jail 'nginx-http-auth' started
-2019-09-18 16:42:21,963 fail2ban.jail           [369]: INFO    Jail 'nginx-botsearch' started
-2019-09-18 16:42:21,964 fail2ban.jail           [369]: INFO    Jail 'nginx-badbots' started
-2019-09-18 23:04:06,441 fail2ban.server         [369]: INFO    Shutdown in progress...
-2019-09-18 23:04:06,441 fail2ban.server         [369]: INFO    Stopping all jails
-2019-09-18 23:04:06,442 fail2ban.filter         [369]: INFO    Removed logfile: '/config/log/nginx/error.log'
-2019-09-18 23:04:06,442 fail2ban.filter         [369]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-18 23:04:06,442 fail2ban.filter         [369]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-18 23:04:22,519 fail2ban.server         [349]: INFO    --------------------------------------------------
-2019-09-18 23:04:22,519 fail2ban.server         [349]: INFO    Starting Fail2ban v0.10.4
-2019-09-18 23:04:22,519 fail2ban.asyncserver    [349]: ERROR   Fail2ban seems to be already running
-2019-09-18 23:04:22,519 fail2ban.asyncserver    [349]: WARNING Forcing execution of the server
-2019-09-18 23:04:22,528 fail2ban.database       [349]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
-2019-09-18 23:04:22,530 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-http-auth'
-2019-09-18 23:04:22,533 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' uses poller {}
-2019-09-18 23:04:22,533 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-18 23:04:22,539 fail2ban.filter         [349]: INFO      maxRetry: 5
-2019-09-18 23:04:22,540 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-18 23:04:22,540 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-18 23:04:22,540 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-18 23:04:22,541 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 24456, hash = 6b8bf72c21c6e7aaa7db4c9d6f5d4b1e2adecf45)
-2019-09-18 23:04:22,541 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-botsearch'
-2019-09-18 23:04:22,542 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' uses poller {}
-2019-09-18 23:04:22,543 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-18 23:04:22,547 fail2ban.datedetector   [349]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
-2019-09-18 23:04:22,549 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-18 23:04:22,549 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-18 23:04:22,549 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-18 23:04:22,550 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-18 23:04:22,550 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 739051, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-18 23:04:22,551 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-badbots'
-2019-09-18 23:04:22,552 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' uses poller {}
-2019-09-18 23:04:22,552 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-18 23:04:22,565 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-18 23:04:22,565 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-18 23:04:22,565 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-18 23:04:22,566 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-18 23:04:22,566 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 739051, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-18 23:04:22,568 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' started
-2019-09-18 23:04:22,569 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' started
-2019-09-18 23:04:22,570 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' started
-2019-09-18 23:12:30,715 fail2ban.server         [349]: INFO    Shutdown in progress...
-2019-09-18 23:12:30,716 fail2ban.server         [349]: INFO    Stopping all jails
-2019-09-18 23:12:30,716 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/error.log'
-2019-09-18 23:12:30,741 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-18 23:12:30,741 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-18 23:12:31,371 fail2ban.actions        [349]: NOTICE  [nginx-badbots] Flush ticket(s) with iptables-multiport
-2019-09-18 23:12:31,372 fail2ban.actions        [349]: NOTICE  [nginx-http-auth] Flush ticket(s) with iptables-multiport
-2019-09-18 23:12:31,373 fail2ban.actions        [349]: NOTICE  [nginx-botsearch] Flush ticket(s) with iptables-multiport
-2019-09-18 23:12:31,434 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' stopped
-2019-09-18 23:12:31,435 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' stopped
-2019-09-18 23:12:31,435 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' stopped
-2019-09-18 23:12:31,436 fail2ban.database       [349]: INFO    Connection to database closed.
-2019-09-18 23:12:31,437 fail2ban.server         [349]: INFO    Exiting Fail2ban
-2019-09-18 23:12:52,691 fail2ban.server         [349]: INFO    --------------------------------------------------
-2019-09-18 23:12:52,691 fail2ban.server         [349]: INFO    Starting Fail2ban v0.10.4
-2019-09-18 23:12:52,694 fail2ban.database       [349]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
-2019-09-18 23:12:52,695 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-http-auth'
-2019-09-18 23:12:52,698 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' uses poller {}
-2019-09-18 23:12:52,699 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-18 23:12:52,704 fail2ban.filter         [349]: INFO      maxRetry: 5
-2019-09-18 23:12:52,705 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-18 23:12:52,705 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-18 23:12:52,705 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-18 23:12:52,706 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 24456, hash = 6b8bf72c21c6e7aaa7db4c9d6f5d4b1e2adecf45)
-2019-09-18 23:12:52,707 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-botsearch'
-2019-09-18 23:12:52,708 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' uses poller {}
-2019-09-18 23:12:52,708 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-18 23:12:52,713 fail2ban.datedetector   [349]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
-2019-09-18 23:12:52,714 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-18 23:12:52,715 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-18 23:12:52,715 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-18 23:12:52,715 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-18 23:12:52,716 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 763579, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-18 23:12:52,716 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-badbots'
-2019-09-18 23:12:52,718 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' uses poller {}
-2019-09-18 23:12:52,718 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-18 23:12:52,729 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-18 23:12:52,729 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-18 23:12:52,729 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-18 23:12:52,730 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-18 23:12:52,730 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 763579, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-18 23:12:52,732 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' started
-2019-09-18 23:12:52,733 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' started
-2019-09-18 23:12:52,734 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' started
-2019-09-18 23:28:46,659 fail2ban.server         [349]: INFO    Shutdown in progress...
-2019-09-18 23:28:46,677 fail2ban.server         [349]: INFO    Stopping all jails
-2019-09-18 23:28:46,677 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/error.log'
-2019-09-18 23:28:46,678 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-18 23:28:46,678 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-18 23:28:46,895 fail2ban.actions        [349]: NOTICE  [nginx-badbots] Flush ticket(s) with iptables-multiport
-2019-09-18 23:28:46,896 fail2ban.actions        [349]: NOTICE  [nginx-http-auth] Flush ticket(s) with iptables-multiport
-2019-09-18 23:28:46,897 fail2ban.actions        [349]: NOTICE  [nginx-botsearch] Flush ticket(s) with iptables-multiport
-2019-09-18 23:29:00,560 fail2ban.server         [349]: INFO    --------------------------------------------------
-2019-09-18 23:29:00,560 fail2ban.server         [349]: INFO    Starting Fail2ban v0.10.4
-2019-09-18 23:29:00,561 fail2ban.asyncserver    [349]: ERROR   Fail2ban seems to be already running
-2019-09-18 23:29:00,561 fail2ban.asyncserver    [349]: WARNING Forcing execution of the server
-2019-09-18 23:29:00,587 fail2ban.database       [349]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
-2019-09-18 23:29:00,588 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-http-auth'
-2019-09-18 23:29:00,592 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' uses poller {}
-2019-09-18 23:29:00,592 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-18 23:29:00,598 fail2ban.filter         [349]: INFO      maxRetry: 5
-2019-09-18 23:29:00,599 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-18 23:29:00,599 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-18 23:29:00,599 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-18 23:29:00,600 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 42652, hash = 6b8bf72c21c6e7aaa7db4c9d6f5d4b1e2adecf45)
-2019-09-18 23:29:00,601 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-botsearch'
-2019-09-18 23:29:00,602 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' uses poller {}
-2019-09-18 23:29:00,602 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-18 23:29:00,608 fail2ban.datedetector   [349]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
-2019-09-18 23:29:00,610 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-18 23:29:00,610 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-18 23:29:00,611 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-18 23:29:00,611 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-18 23:29:00,611 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 801664, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-18 23:29:00,613 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-badbots'
-2019-09-18 23:29:00,614 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' uses poller {}
-2019-09-18 23:29:00,614 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-18 23:29:00,625 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-18 23:29:00,626 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-18 23:29:00,626 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-18 23:29:00,626 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-18 23:29:00,627 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 801664, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-18 23:29:00,629 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' started
-2019-09-18 23:29:00,630 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' started
-2019-09-18 23:29:00,630 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' started
-2019-09-19 22:09:56,541 fail2ban.server         [349]: INFO    Shutdown in progress...
-2019-09-19 22:09:56,553 fail2ban.server         [349]: INFO    Stopping all jails
-2019-09-19 22:09:56,553 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/error.log'
-2019-09-19 22:09:56,554 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-19 22:09:56,554 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
-2019-09-19 22:09:56,974 fail2ban.actions        [349]: NOTICE  [nginx-badbots] Flush ticket(s) with iptables-multiport
-2019-09-19 22:09:56,975 fail2ban.actions        [349]: NOTICE  [nginx-botsearch] Flush ticket(s) with iptables-multiport
-2019-09-19 22:09:56,975 fail2ban.actions        [349]: NOTICE  [nginx-http-auth] Flush ticket(s) with iptables-multiport
-2019-09-19 22:09:56,976 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' stopped
-2019-09-19 22:09:56,976 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' stopped
-2019-09-19 22:09:56,976 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' stopped
-2019-09-19 22:09:56,977 fail2ban.database       [349]: INFO    Connection to database closed.
-2019-09-19 22:09:56,977 fail2ban.server         [349]: INFO    Exiting Fail2ban
-2019-09-19 22:10:14,918 fail2ban.server         [349]: INFO    --------------------------------------------------
-2019-09-19 22:10:14,918 fail2ban.server         [349]: INFO    Starting Fail2ban v0.10.4
-2019-09-19 22:10:14,920 fail2ban.database       [349]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
-2019-09-19 22:10:14,922 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-http-auth'
-2019-09-19 22:10:14,948 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' uses poller {}
-2019-09-19 22:10:14,949 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-19 22:10:14,964 fail2ban.filter         [349]: INFO      maxRetry: 5
-2019-09-19 22:10:14,965 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-19 22:10:14,966 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-19 22:10:14,966 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-19 22:10:14,967 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 50072, hash = 6b8bf72c21c6e7aaa7db4c9d6f5d4b1e2adecf45)
-2019-09-19 22:10:14,969 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-botsearch'
-2019-09-19 22:10:14,970 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' uses poller {}
-2019-09-19 22:10:14,970 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-19 22:10:14,977 fail2ban.datedetector   [349]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
-2019-09-19 22:10:14,978 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-19 22:10:14,979 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-19 22:10:14,979 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-19 22:10:14,979 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-19 22:10:14,980 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 859370, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-19 22:10:14,980 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-badbots'
-2019-09-19 22:10:14,981 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' uses poller {}
-2019-09-19 22:10:14,981 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
-2019-09-19 22:10:14,993 fail2ban.filter         [349]: INFO      maxRetry: 2
-2019-09-19 22:10:14,993 fail2ban.filter         [349]: INFO      findtime: 600
-2019-09-19 22:10:14,993 fail2ban.actions        [349]: INFO      banTime: 600
-2019-09-19 22:10:14,994 fail2ban.filter         [349]: INFO      encoding: UTF-8
-2019-09-19 22:10:14,994 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 859370, hash = a3688b6dcb56feeae9662a198b00fb512b6d8d47)
-2019-09-19 22:10:14,996 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' started
-2019-09-19 22:10:14,997 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' started
-2019-09-19 22:10:14,998 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' started
+2019-09-22 02:00:00,699 fail2ban.server         [349]: INFO    rollover performed on /config/log/fail2ban/fail2ban.log
+2019-09-22 22:24:40,061 fail2ban.server         [349]: INFO    Shutdown in progress...
+2019-09-22 22:24:40,061 fail2ban.server         [349]: INFO    Stopping all jails
+2019-09-22 22:24:40,062 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/error.log'
+2019-09-22 22:24:40,063 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
+2019-09-22 22:24:40,063 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
+2019-09-22 22:24:40,425 fail2ban.actions        [349]: NOTICE  [nginx-http-auth] Flush ticket(s) with iptables-multiport
+2019-09-22 22:24:40,426 fail2ban.actions        [349]: NOTICE  [nginx-badbots] Flush ticket(s) with iptables-multiport
+2019-09-22 22:24:40,427 fail2ban.actions        [349]: NOTICE  [nginx-botsearch] Flush ticket(s) with iptables-multiport
+2019-09-22 22:24:40,651 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' stopped
+2019-09-22 22:24:40,652 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' stopped
+2019-09-22 22:24:40,653 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' stopped
+2019-09-22 22:24:40,654 fail2ban.database       [349]: INFO    Connection to database closed.
+2019-09-22 22:24:40,655 fail2ban.server         [349]: INFO    Exiting Fail2ban
+2019-09-22 22:24:59,941 fail2ban.server         [349]: INFO    --------------------------------------------------
+2019-09-22 22:24:59,941 fail2ban.server         [349]: INFO    Starting Fail2ban v0.10.4
+2019-09-22 22:24:59,965 fail2ban.database       [349]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
+2019-09-22 22:24:59,968 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-http-auth'
+2019-09-22 22:24:59,973 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' uses poller {}
+2019-09-22 22:24:59,974 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
+2019-09-22 22:24:59,981 fail2ban.filter         [349]: INFO      maxRetry: 5
+2019-09-22 22:24:59,982 fail2ban.filter         [349]: INFO      findtime: 600
+2019-09-22 22:24:59,982 fail2ban.actions        [349]: INFO      banTime: 600
+2019-09-22 22:24:59,983 fail2ban.filter         [349]: INFO      encoding: UTF-8
+2019-09-22 22:24:59,984 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 1108, hash = 0562553c7fd88821f7437a2e7f10e503e55b988a)
+2019-09-22 22:24:59,985 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-botsearch'
+2019-09-22 22:24:59,986 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' uses poller {}
+2019-09-22 22:24:59,986 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
+2019-09-22 22:24:59,991 fail2ban.datedetector   [349]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
+2019-09-22 22:24:59,994 fail2ban.filter         [349]: INFO      maxRetry: 2
+2019-09-22 22:24:59,994 fail2ban.filter         [349]: INFO      findtime: 600
+2019-09-22 22:24:59,994 fail2ban.actions        [349]: INFO      banTime: 600
+2019-09-22 22:24:59,995 fail2ban.filter         [349]: INFO      encoding: UTF-8
+2019-09-22 22:24:59,995 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 31389, hash = c2964df396b76e42de3119e413bbd250c416f336)
+2019-09-22 22:24:59,996 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-badbots'
+2019-09-22 22:24:59,997 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' uses poller {}
+2019-09-22 22:24:59,997 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
+2019-09-22 22:25:00,010 fail2ban.filter         [349]: INFO      maxRetry: 2
+2019-09-22 22:25:00,010 fail2ban.filter         [349]: INFO      findtime: 600
+2019-09-22 22:25:00,011 fail2ban.actions        [349]: INFO      banTime: 600
+2019-09-22 22:25:00,011 fail2ban.filter         [349]: INFO      encoding: UTF-8
+2019-09-22 22:25:00,012 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 31389, hash = c2964df396b76e42de3119e413bbd250c416f336)
+2019-09-22 22:25:00,013 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' started
+2019-09-22 22:25:00,015 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' started
+2019-09-22 22:25:00,016 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' started
+2019-09-22 22:31:49,465 fail2ban.server         [349]: INFO    Shutdown in progress...
+2019-09-22 22:31:49,465 fail2ban.server         [349]: INFO    Stopping all jails
+2019-09-22 22:31:49,466 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/error.log'
+2019-09-22 22:31:49,466 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
+2019-09-22 22:31:49,466 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
+2019-09-22 22:31:49,885 fail2ban.actions        [349]: NOTICE  [nginx-http-auth] Flush ticket(s) with iptables-multiport
+2019-09-22 22:31:49,886 fail2ban.actions        [349]: NOTICE  [nginx-botsearch] Flush ticket(s) with iptables-multiport
+2019-09-22 22:31:49,886 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' stopped
+2019-09-22 22:31:49,887 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' stopped
+2019-09-22 22:31:49,887 fail2ban.actions        [349]: NOTICE  [nginx-badbots] Flush ticket(s) with iptables-multiport
+2019-09-22 22:31:49,888 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' stopped
+2019-09-22 22:31:49,888 fail2ban.database       [349]: INFO    Connection to database closed.
+2019-09-22 22:31:49,888 fail2ban.server         [349]: INFO    Exiting Fail2ban
+2019-09-22 22:32:12,484 fail2ban.server         [349]: INFO    --------------------------------------------------
+2019-09-22 22:32:12,484 fail2ban.server         [349]: INFO    Starting Fail2ban v0.10.4
+2019-09-22 22:32:12,513 fail2ban.database       [349]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
+2019-09-22 22:32:12,515 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-http-auth'
+2019-09-22 22:32:12,522 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' uses poller {}
+2019-09-22 22:32:12,522 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
+2019-09-22 22:32:12,530 fail2ban.filter         [349]: INFO      maxRetry: 5
+2019-09-22 22:32:12,531 fail2ban.filter         [349]: INFO      findtime: 600
+2019-09-22 22:32:12,531 fail2ban.actions        [349]: INFO      banTime: 600
+2019-09-22 22:32:12,531 fail2ban.filter         [349]: INFO      encoding: UTF-8
+2019-09-22 22:32:12,532 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 1108, hash = 0562553c7fd88821f7437a2e7f10e503e55b988a)
+2019-09-22 22:32:12,533 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-botsearch'
+2019-09-22 22:32:12,534 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' uses poller {}
+2019-09-22 22:32:12,534 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
+2019-09-22 22:32:12,538 fail2ban.datedetector   [349]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
+2019-09-22 22:32:12,540 fail2ban.filter         [349]: INFO      maxRetry: 2
+2019-09-22 22:32:12,540 fail2ban.filter         [349]: INFO      findtime: 600
+2019-09-22 22:32:12,541 fail2ban.actions        [349]: INFO      banTime: 600
+2019-09-22 22:32:12,541 fail2ban.filter         [349]: INFO      encoding: UTF-8
+2019-09-22 22:32:12,541 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 41364, hash = c2964df396b76e42de3119e413bbd250c416f336)
+2019-09-22 22:32:12,542 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-badbots'
+2019-09-22 22:32:12,543 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' uses poller {}
+2019-09-22 22:32:12,543 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
+2019-09-22 22:32:12,562 fail2ban.filter         [349]: INFO      maxRetry: 2
+2019-09-22 22:32:12,562 fail2ban.filter         [349]: INFO      findtime: 600
+2019-09-22 22:32:12,563 fail2ban.actions        [349]: INFO      banTime: 600
+2019-09-22 22:32:12,563 fail2ban.filter         [349]: INFO      encoding: UTF-8
+2019-09-22 22:32:12,564 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 41364, hash = c2964df396b76e42de3119e413bbd250c416f336)
+2019-09-22 22:32:12,566 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' started
+2019-09-22 22:32:12,567 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' started
+2019-09-22 22:32:12,568 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' started
+2019-09-22 22:34:12,102 fail2ban.server         [349]: INFO    Shutdown in progress...
+2019-09-22 22:34:12,103 fail2ban.server         [349]: INFO    Stopping all jails
+2019-09-22 22:34:12,103 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/error.log'
+2019-09-22 22:34:12,103 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
+2019-09-22 22:34:12,103 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
+2019-09-22 22:35:24,375 fail2ban.server         [349]: INFO    --------------------------------------------------
+2019-09-22 22:35:24,375 fail2ban.server         [349]: INFO    Starting Fail2ban v0.10.4
+2019-09-22 22:35:24,376 fail2ban.asyncserver    [349]: ERROR   Fail2ban seems to be already running
+2019-09-22 22:35:24,376 fail2ban.asyncserver    [349]: WARNING Forcing execution of the server
+2019-09-22 22:35:24,378 fail2ban.database       [349]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
+2019-09-22 22:35:24,379 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-http-auth'
+2019-09-22 22:35:24,382 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' uses poller {}
+2019-09-22 22:35:24,383 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
+2019-09-22 22:35:24,388 fail2ban.filter         [349]: INFO      maxRetry: 5
+2019-09-22 22:35:24,389 fail2ban.filter         [349]: INFO      findtime: 600
+2019-09-22 22:35:24,389 fail2ban.actions        [349]: INFO      banTime: 600
+2019-09-22 22:35:24,389 fail2ban.filter         [349]: INFO      encoding: UTF-8
+2019-09-22 22:35:24,390 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 1108, hash = 0562553c7fd88821f7437a2e7f10e503e55b988a)
+2019-09-22 22:35:24,391 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-botsearch'
+2019-09-22 22:35:24,392 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' uses poller {}
+2019-09-22 22:35:24,392 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
+2019-09-22 22:35:24,396 fail2ban.datedetector   [349]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
+2019-09-22 22:35:24,398 fail2ban.filter         [349]: INFO      maxRetry: 2
+2019-09-22 22:35:24,398 fail2ban.filter         [349]: INFO      findtime: 600
+2019-09-22 22:35:24,398 fail2ban.actions        [349]: INFO      banTime: 600
+2019-09-22 22:35:24,399 fail2ban.filter         [349]: INFO      encoding: UTF-8
+2019-09-22 22:35:24,399 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 44100, hash = c2964df396b76e42de3119e413bbd250c416f336)
+2019-09-22 22:35:24,400 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-badbots'
+2019-09-22 22:35:24,401 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' uses poller {}
+2019-09-22 22:35:24,401 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
+2019-09-22 22:35:24,411 fail2ban.filter         [349]: INFO      maxRetry: 2
+2019-09-22 22:35:24,412 fail2ban.filter         [349]: INFO      findtime: 600
+2019-09-22 22:35:24,412 fail2ban.actions        [349]: INFO      banTime: 600
+2019-09-22 22:35:24,412 fail2ban.filter         [349]: INFO      encoding: UTF-8
+2019-09-22 22:35:24,413 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 44100, hash = c2964df396b76e42de3119e413bbd250c416f336)
+2019-09-22 22:35:24,414 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' started
+2019-09-22 22:35:24,415 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' started
+2019-09-22 22:35:24,416 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' started
+2019-09-22 22:41:26,843 fail2ban.server         [349]: INFO    Shutdown in progress...
+2019-09-22 22:41:26,843 fail2ban.server         [349]: INFO    Stopping all jails
+2019-09-22 22:41:26,844 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/error.log'
+2019-09-22 22:41:26,844 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
+2019-09-22 22:41:26,844 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
+2019-09-22 22:41:27,035 fail2ban.actions        [349]: NOTICE  [nginx-badbots] Flush ticket(s) with iptables-multiport
+2019-09-22 22:41:27,036 fail2ban.actions        [349]: NOTICE  [nginx-http-auth] Flush ticket(s) with iptables-multiport
+2019-09-22 22:41:27,036 fail2ban.actions        [349]: NOTICE  [nginx-botsearch] Flush ticket(s) with iptables-multiport
+2019-09-22 22:41:27,037 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' stopped
+2019-09-22 22:41:27,132 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' stopped
+2019-09-22 22:41:27,162 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' stopped
+2019-09-22 22:41:27,163 fail2ban.database       [349]: INFO    Connection to database closed.
+2019-09-22 22:41:27,163 fail2ban.server         [349]: INFO    Exiting Fail2ban
+2019-09-22 22:42:02,625 fail2ban.server         [349]: INFO    --------------------------------------------------
+2019-09-22 22:42:02,625 fail2ban.server         [349]: INFO    Starting Fail2ban v0.10.4
+2019-09-22 22:42:02,635 fail2ban.database       [349]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
+2019-09-22 22:42:02,636 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-http-auth'
+2019-09-22 22:42:02,640 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' uses poller {}
+2019-09-22 22:42:02,641 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
+2019-09-22 22:42:02,648 fail2ban.filter         [349]: INFO      maxRetry: 5
+2019-09-22 22:42:02,648 fail2ban.filter         [349]: INFO      findtime: 600
+2019-09-22 22:42:02,648 fail2ban.actions        [349]: INFO      banTime: 600
+2019-09-22 22:42:02,649 fail2ban.filter         [349]: INFO      encoding: UTF-8
+2019-09-22 22:42:02,649 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 1108, hash = 0562553c7fd88821f7437a2e7f10e503e55b988a)
+2019-09-22 22:42:02,650 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-botsearch'
+2019-09-22 22:42:02,651 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' uses poller {}
+2019-09-22 22:42:02,651 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
+2019-09-22 22:42:02,657 fail2ban.datedetector   [349]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
+2019-09-22 22:42:02,661 fail2ban.filter         [349]: INFO      maxRetry: 2
+2019-09-22 22:42:02,661 fail2ban.filter         [349]: INFO      findtime: 600
+2019-09-22 22:42:02,661 fail2ban.actions        [349]: INFO      banTime: 600
+2019-09-22 22:42:02,662 fail2ban.filter         [349]: INFO      encoding: UTF-8
+2019-09-22 22:42:02,663 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 54000, hash = c2964df396b76e42de3119e413bbd250c416f336)
+2019-09-22 22:42:02,663 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-badbots'
+2019-09-22 22:42:02,665 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' uses poller {}
+2019-09-22 22:42:02,665 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
+2019-09-22 22:42:02,686 fail2ban.filter         [349]: INFO      maxRetry: 2
+2019-09-22 22:42:02,686 fail2ban.filter         [349]: INFO      findtime: 600
+2019-09-22 22:42:02,687 fail2ban.actions        [349]: INFO      banTime: 600
+2019-09-22 22:42:02,687 fail2ban.filter         [349]: INFO      encoding: UTF-8
+2019-09-22 22:42:02,688 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 54000, hash = c2964df396b76e42de3119e413bbd250c416f336)
+2019-09-22 22:42:02,689 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' started
+2019-09-22 22:42:02,691 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' started
+2019-09-22 22:42:02,692 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' started
+2019-09-22 22:43:35,245 fail2ban.server         [349]: INFO    Shutdown in progress...
+2019-09-22 22:43:35,245 fail2ban.server         [349]: INFO    Stopping all jails
+2019-09-22 22:43:35,246 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/error.log'
+2019-09-22 22:43:35,246 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
+2019-09-22 22:43:35,246 fail2ban.filter         [349]: INFO    Removed logfile: '/config/log/nginx/access.log'
+2019-09-22 22:43:35,444 fail2ban.actions        [349]: NOTICE  [nginx-http-auth] Flush ticket(s) with iptables-multiport
+2019-09-22 22:43:35,444 fail2ban.actions        [349]: NOTICE  [nginx-botsearch] Flush ticket(s) with iptables-multiport
+2019-09-22 22:43:35,445 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' stopped
+2019-09-22 22:43:35,464 fail2ban.actions        [349]: NOTICE  [nginx-badbots] Flush ticket(s) with iptables-multiport
+2019-09-22 22:43:43,558 fail2ban.server         [349]: INFO    --------------------------------------------------
+2019-09-22 22:43:43,558 fail2ban.server         [349]: INFO    Starting Fail2ban v0.10.4
+2019-09-22 22:43:43,558 fail2ban.asyncserver    [349]: ERROR   Fail2ban seems to be already running
+2019-09-22 22:43:43,558 fail2ban.asyncserver    [349]: WARNING Forcing execution of the server
+2019-09-22 22:43:43,568 fail2ban.database       [349]: INFO    Connected to fail2ban persistent database '/config/fail2ban/fail2ban.sqlite3'
+2019-09-22 22:43:43,569 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-http-auth'
+2019-09-22 22:43:43,572 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' uses poller {}
+2019-09-22 22:43:43,573 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
+2019-09-22 22:43:43,580 fail2ban.filter         [349]: INFO      maxRetry: 5
+2019-09-22 22:43:43,580 fail2ban.filter         [349]: INFO      findtime: 600
+2019-09-22 22:43:43,580 fail2ban.actions        [349]: INFO      banTime: 600
+2019-09-22 22:43:43,581 fail2ban.filter         [349]: INFO      encoding: UTF-8
+2019-09-22 22:43:43,581 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/error.log' (pos = 1108, hash = 0562553c7fd88821f7437a2e7f10e503e55b988a)
+2019-09-22 22:43:43,582 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-botsearch'
+2019-09-22 22:43:43,583 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' uses poller {}
+2019-09-22 22:43:43,583 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
+2019-09-22 22:43:43,587 fail2ban.datedetector   [349]: INFO      date pattern `'{^LN-BEG}%ExY(?P<_sep>[-/.])%m(?P=_sep)%d[T ]%H:%M:%S(?:[.,]%f)?(?:\\s*%z)?'`: `{^LN-BEG}ExYear(?P<_sep>[-/.])Month(?P=_sep)Day[T ]24hour:Minute:Second(?:[.,]Microseconds)?(?:\s*Zone offset)?`
+2019-09-22 22:43:43,589 fail2ban.filter         [349]: INFO      maxRetry: 2
+2019-09-22 22:43:43,589 fail2ban.filter         [349]: INFO      findtime: 600
+2019-09-22 22:43:43,589 fail2ban.actions        [349]: INFO      banTime: 600
+2019-09-22 22:43:43,590 fail2ban.filter         [349]: INFO      encoding: UTF-8
+2019-09-22 22:43:43,590 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 59805, hash = c2964df396b76e42de3119e413bbd250c416f336)
+2019-09-22 22:43:43,591 fail2ban.jail           [349]: INFO    Creating new jail 'nginx-badbots'
+2019-09-22 22:43:43,592 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' uses poller {}
+2019-09-22 22:43:43,592 fail2ban.jail           [349]: INFO    Initiated 'polling' backend
+2019-09-22 22:43:43,603 fail2ban.filter         [349]: INFO      maxRetry: 2
+2019-09-22 22:43:43,603 fail2ban.filter         [349]: INFO      findtime: 600
+2019-09-22 22:43:43,603 fail2ban.actions        [349]: INFO      banTime: 600
+2019-09-22 22:43:43,603 fail2ban.filter         [349]: INFO      encoding: UTF-8
+2019-09-22 22:43:43,604 fail2ban.filter         [349]: INFO    Added logfile: '/config/log/nginx/access.log' (pos = 59805, hash = c2964df396b76e42de3119e413bbd250c416f336)
+2019-09-22 22:43:43,605 fail2ban.jail           [349]: INFO    Jail 'nginx-http-auth' started
+2019-09-22 22:43:43,606 fail2ban.jail           [349]: INFO    Jail 'nginx-botsearch' started
+2019-09-22 22:43:43,607 fail2ban.jail           [349]: INFO    Jail 'nginx-badbots' started

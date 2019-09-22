@@ -14,14 +14,14 @@ services:
     build: 
       context: ./build/nginx
     volumes:
-      - ../../../webroot:/var/www/html:ro
+      - ../../../webroot:/var/www/html
       - ./conf/nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./conf/nginx/sites/:/etc/nginx/sites-available
       - ./conf/nginx/conf.d/:/etc/nginx/conf.d
     ports:
       - 8001:80
       - 8002:81
-#      - 8003:83
+      - 8003:83
       #- 443:443
     depends_on:
       - php-fpm

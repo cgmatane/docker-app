@@ -1,70 +1,22 @@
-[15-Sep-2019 00:00:01] NOTICE: fpm is running, pid 719
-[15-Sep-2019 00:00:01] NOTICE: ready to handle connections
-[16-Sep-2019 18:16:49] NOTICE: Terminating ...
-[16-Sep-2019 18:16:49] NOTICE: exiting, bye-bye!
-[16-Sep-2019 18:17:18] NOTICE: fpm is running, pid 368
-[16-Sep-2019 18:17:18] NOTICE: ready to handle connections
-[16-Sep-2019 18:34:11] NOTICE: Terminating ...
-[16-Sep-2019 18:34:11] NOTICE: exiting, bye-bye!
-[16-Sep-2019 18:34:18] NOTICE: fpm is running, pid 348
-[16-Sep-2019 18:34:18] NOTICE: ready to handle connections
-[16-Sep-2019 21:13:02] NOTICE: Terminating ...
-[16-Sep-2019 21:13:02] NOTICE: exiting, bye-bye!
-[16-Sep-2019 21:13:54] NOTICE: fpm is running, pid 348
-[16-Sep-2019 21:13:54] NOTICE: ready to handle connections
-[16-Sep-2019 21:38:39] NOTICE: Terminating ...
-[16-Sep-2019 21:38:39] NOTICE: exiting, bye-bye!
-[16-Sep-2019 21:39:08] NOTICE: fpm is running, pid 368
-[16-Sep-2019 21:39:08] NOTICE: ready to handle connections
-[16-Sep-2019 21:42:13] NOTICE: Terminating ...
-[16-Sep-2019 21:42:13] NOTICE: exiting, bye-bye!
-[16-Sep-2019 21:42:40] NOTICE: fpm is running, pid 368
-[16-Sep-2019 21:42:40] NOTICE: ready to handle connections
-[16-Sep-2019 21:45:16] NOTICE: Terminating ...
-[16-Sep-2019 21:45:16] NOTICE: exiting, bye-bye!
-[16-Sep-2019 21:45:26] NOTICE: fpm is running, pid 348
-[16-Sep-2019 21:45:26] NOTICE: ready to handle connections
-[16-Sep-2019 21:45:35] NOTICE: Terminating ...
-[16-Sep-2019 21:45:35] NOTICE: exiting, bye-bye!
-[16-Sep-2019 21:45:42] NOTICE: fpm is running, pid 348
-[16-Sep-2019 21:45:42] NOTICE: ready to handle connections
-[16-Sep-2019 21:51:05] NOTICE: Terminating ...
-[16-Sep-2019 21:51:05] NOTICE: exiting, bye-bye!
-[16-Sep-2019 21:51:59] NOTICE: fpm is running, pid 348
-[16-Sep-2019 21:51:59] NOTICE: ready to handle connections
-[16-Sep-2019 21:57:22] NOTICE: Terminating ...
-[16-Sep-2019 21:57:22] NOTICE: exiting, bye-bye!
-[16-Sep-2019 21:57:58] NOTICE: fpm is running, pid 348
-[16-Sep-2019 21:57:58] NOTICE: ready to handle connections
-[16-Sep-2019 22:01:04] NOTICE: Terminating ...
-[16-Sep-2019 22:01:04] NOTICE: exiting, bye-bye!
-[16-Sep-2019 22:01:15] NOTICE: fpm is running, pid 348
-[16-Sep-2019 22:01:15] NOTICE: ready to handle connections
-[16-Sep-2019 22:03:20] NOTICE: Terminating ...
-[16-Sep-2019 22:03:20] NOTICE: exiting, bye-bye!
-[16-Sep-2019 22:03:28] NOTICE: fpm is running, pid 348
-[16-Sep-2019 22:03:28] NOTICE: ready to handle connections
-[16-Sep-2019 22:06:34] NOTICE: Terminating ...
-[16-Sep-2019 22:06:34] NOTICE: exiting, bye-bye!
-[16-Sep-2019 22:06:43] NOTICE: fpm is running, pid 348
-[16-Sep-2019 22:06:43] NOTICE: ready to handle connections
-[18-Sep-2019 14:41:43] NOTICE: Terminating ...
-[18-Sep-2019 14:41:43] NOTICE: exiting, bye-bye!
-[18-Sep-2019 14:42:21] NOTICE: fpm is running, pid 368
-[18-Sep-2019 14:42:21] NOTICE: ready to handle connections
-[18-Sep-2019 21:04:06] NOTICE: Terminating ...
-[18-Sep-2019 21:04:06] NOTICE: exiting, bye-bye!
-[18-Sep-2019 21:04:22] NOTICE: fpm is running, pid 347
-[18-Sep-2019 21:04:22] NOTICE: ready to handle connections
-[18-Sep-2019 21:12:30] NOTICE: Terminating ...
-[18-Sep-2019 21:12:30] NOTICE: exiting, bye-bye!
-[18-Sep-2019 21:12:52] NOTICE: fpm is running, pid 348
-[18-Sep-2019 21:12:52] NOTICE: ready to handle connections
-[18-Sep-2019 21:28:46] NOTICE: Terminating ...
-[18-Sep-2019 21:28:46] NOTICE: exiting, bye-bye!
-[18-Sep-2019 21:29:00] NOTICE: fpm is running, pid 348
-[18-Sep-2019 21:29:00] NOTICE: ready to handle connections
-[19-Sep-2019 20:09:56] NOTICE: Terminating ...
-[19-Sep-2019 20:09:56] NOTICE: exiting, bye-bye!
-[19-Sep-2019 20:10:14] NOTICE: fpm is running, pid 348
-[19-Sep-2019 20:10:14] NOTICE: ready to handle connections
+[22-Sep-2019 00:00:00] NOTICE: fpm is running, pid 687
+[22-Sep-2019 00:00:00] NOTICE: ready to handle connections
+[22-Sep-2019 20:24:40] NOTICE: Terminating ...
+[22-Sep-2019 20:24:40] NOTICE: exiting, bye-bye!
+[22-Sep-2019 20:24:59] NOTICE: fpm is running, pid 348
+[22-Sep-2019 20:24:59] NOTICE: ready to handle connections
+[22-Sep-2019 20:31:49] NOTICE: Terminating ...
+[22-Sep-2019 20:31:49] NOTICE: exiting, bye-bye!
+[22-Sep-2019 20:32:12] NOTICE: fpm is running, pid 348
+[22-Sep-2019 20:32:12] NOTICE: ready to handle connections
+[22-Sep-2019 20:34:12] NOTICE: Terminating ...
+[22-Sep-2019 20:34:12] NOTICE: exiting, bye-bye!
+[22-Sep-2019 20:35:24] NOTICE: fpm is running, pid 348
+[22-Sep-2019 20:35:24] NOTICE: ready to handle connections
+[22-Sep-2019 20:41:26] NOTICE: Terminating ...
+[22-Sep-2019 20:41:26] NOTICE: exiting, bye-bye!
+[22-Sep-2019 20:42:02] NOTICE: fpm is running, pid 348
+[22-Sep-2019 20:42:02] NOTICE: ready to handle connections
+[22-Sep-2019 20:43:35] NOTICE: Terminating ...
+[22-Sep-2019 20:43:35] NOTICE: exiting, bye-bye!
+[22-Sep-2019 20:43:43] NOTICE: fpm is running, pid 348
+[22-Sep-2019 20:43:43] NOTICE: ready to handle connections
