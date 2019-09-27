@@ -1,0 +1,52 @@
+# config file v2
+
+version: '3'
+
+networks:
+  laravel:
+
+services:
+  nginx:
+    image: nginx:stable-alpine
+    container_name: nginx-lara
+    ports:
+      - "8004:84"
+    volumes:
+      - ../../../billetterie:/var/www
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php
+      - mysql
+    networks:
+      - laravel
+
+
+  mysql:
+    image: mysql
+    container_name: mysql
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: billetterie
+      MYSQL_USER: billetterie
+      MYSQL_PASSWORD: motdepasse
+      MYSQL_ROOT_PASSWORD: motdepasse
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    networks:
+      - laravel
+
+
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php-fpm7.2
+    volumes:
+      - ../../../billetterie:/var/www
+    ports:
+      - "9001:9000"
+    networks:
+      - laravel
