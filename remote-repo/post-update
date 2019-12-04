@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "-- PUSH SUR LE SITE DE DEMO..."
+cd /home/realit/billetterie
+unset GIT_DIR
+git pull origin master
+composer install
+echo "-- PUSH AVEC SUCCES !"
+
+
+
+
